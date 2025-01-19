@@ -1,0 +1,57 @@
+.StudyingUserStatusWarp{
+    height: 100%;
+    position: relative;
+}
+.StudyingUserStatusTop{
+    width: 100%;
+    height: 30px;
+}
+.StudyingUserStatus{
+    display: flex;
+    height: 70px;
+    width: 160px;
+    background-color:#373633;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 45px;
+    bottom: 0;
+}
+.StudyingUserLeft{
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+}
+.StudyingUserRight{
+    margin: auto;
+}
+.StudyingUserIcon{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    object-fit: cover;
+}
+.StudyingUserName{
+    color: rgba(255, 255, 255, 0.731);
+    font-weight: 700;
+    font-size: 90%;
+    margin-top: 2px;
+}
+.StudyingTime{
+    color: white;
+    font-weight: 700;
+    font-size: 110%;
+}
+.StudyingUserRight{
+    margin-left: 10px;
+}
+.StudyingUserStatusMessBottom{
+    background-color: #fefe36;
+    width: 10px;
+    height: 10px;
+    border-radius: 0 0 10px 0;
+    z-index: 1;
+    margin-top: 46px;
+    margin-left: 30px;
+    position: absolute;
+}

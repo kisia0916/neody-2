@@ -1,0 +1,29 @@
+.TimeLineStatusMain{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.TimeLineStatusText{
+    color: #F8F70A;
+
+}
+.TimeLIneStatusMainCenter{
+    max-width: 135px;
+}
+.TimeLIneStatusMainLeft{
+    height: 1px;
+    width: calc(50% - 65px - 40px);
+    background-color: #43433F;
+}
+.TimeLIneStatusMainRight{
+    height: 1px;
+    width: calc(50% - 65px - 40px);
+    background-color: #43433F;
+}
+.TimeLineContent{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}

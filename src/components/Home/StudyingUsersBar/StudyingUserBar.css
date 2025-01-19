@@ -1,0 +1,14 @@
+.StudyingUsersBar{
+    /* height: 130px; */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    border-bottom: solid 1px #43433F;
+}
+.StudyingUserBarWrap{
+    display: flex;
+    margin-bottom: 15px;
+    /* position: absolute; */
+    /* bottom:20px; */
+    /* margin: auto; */
+}

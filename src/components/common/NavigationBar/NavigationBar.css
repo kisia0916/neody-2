@@ -1,0 +1,26 @@
+.NavigationBarMain{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: solid 1px #43433F;
+    display: flex;
+    justify-content: space-around;
+}
+.NavigationBarButton{
+    width: 60px;
+    height: 100%;
+    /* background: red; */
+    margin: auto;
+}
+.NavigationBarText{
+    color: white;
+    font-size: 75%;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 900;
+    margin: auto;
+}
+.NavigationBarIcon{
+    height: 25px;
+    margin: auto;
+}

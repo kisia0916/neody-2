@@ -1,0 +1,10 @@
+.TopBarUserInfo{
+    display: flex;
+    margin-right: 20px;
+}
+.TopBarUserInfoIcon{
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    object-fit: cover;
+}

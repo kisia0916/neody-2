@@ -1,0 +1,21 @@
+.StudyingUserMess{
+    display: flex;
+    height: 40px;
+    background-color: #fefe36;
+    border-radius: 50px 50px 50px 0;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 10px;
+    max-width: 140px;
+}
+.StudyingUserMessText{
+    font-weight: 700;
+    color: #43433F;
+    font-size: 80%;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    white-space: nowrap;   
+    overflow: hidden;         /* 要素からはみ出した部分を隠す */
+    text-overflow: ellipsis;  /* 省略記号を表示 */
+}

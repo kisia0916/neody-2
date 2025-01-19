@@ -1,0 +1,21 @@
+.TimeRecord{
+    width: calc(100% - 45px - 20px);
+    height: 60px;
+    background-color: #373633;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+.TimeRecordIcon{
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 5px;
+}
+.TimeRecordInfo{
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+}

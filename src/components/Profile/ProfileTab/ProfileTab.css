@@ -1,0 +1,23 @@
+.ProfileTab{
+    height: 40px;
+    display: flex;
+    border-bottom: solid 1px #43433F;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.ProfileTabButton{
+    height: 100%;
+    width: 100px;
+    display: flex;
+}
+.ProfileTabButtonText{
+    margin: auto;
+    margin-top: 5px;
+}
+.ProfileTabButtonSelected{
+    color: white;
+    border-bottom: solid 2px #f8f70a;
+}
+.ProfileTabButtonNone{
+    color:#ffffffba;
+}
