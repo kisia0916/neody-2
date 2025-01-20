@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import "./TimeLineMain.css"
 import UserStudyRecord from './UserStudyRecord/UserStudyRecord'
