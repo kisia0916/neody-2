@@ -20,7 +20,7 @@ export async function middleware(request:NextRequest){
             //resからアカウントが存在しているか確認し、しない場合はsignupにリダイレクト
             
         }else{
-            url.pathname = "/error"
+            url.pathname = "/signin"
             return NextResponse.redirect(url)
         }
     }catch(error){
