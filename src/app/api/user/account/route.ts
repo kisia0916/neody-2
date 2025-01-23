@@ -1,13 +1,8 @@
 import { auth } from "$/auth";
 import { prisma } from "$/lib/db";
+import { user_schema, user_type } from "$/lib/validate_schema";
 import { NextRequest, NextResponse } from "next/server";
 import { string, z } from "zod";
-
-const user_schema = z.object({
-    name:string(),
-    email:string(),
-    image:string()
-})
 
 export interface api_user_account_response {
     account_status:"signup"|"signin"
@@ -16,7 +11,6 @@ interface api_error_response {
     data:string
 }
 
-type user_type =z.infer<typeof user_schema>
 
 export async function GET(req:NextRequest):Promise<NextResponse<api_user_account_response|api_error_response>>{
     try{
@@ -28,13 +22,14 @@ export async function GET(req:NextRequest):Promise<NextResponse<api_user_account
                     email:user_data.email
                 }
             })
-            if (target_user){
+            if (target_user.length > 0){
                 return NextResponse.json({account_status:"signin"})
             }else{
                 return NextResponse.json({account_status:"signup"})
             }
         }else{
-            return NextResponse.json({data:"session is not found"},{status:401})
+            console.log(session)
+            return NextResponse.json({data:"session is not found"})
         }
     }catch(error){
         if (error instanceof z.ZodError){
