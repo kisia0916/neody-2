@@ -4,44 +4,41 @@ import { api_user_account_response } from '../api/user/account/route'
 import { useRouter } from 'next/navigation'
 
 function SigninPageContent() {
-    const {data:session,status} = useSession()
     const router = useRouter()
     const [user_check_status,set_user_check_status] = useState<boolean>(false)
+    const {data:session,status} = useSession()
     const first_flg = useRef<boolean>(true)
     useEffect(()=>{
-        const fetch_data = async()=>{
-          const response = await fetch("/api/user/account",{
-              method:"get",
-              cache:"no-store"
-          })
-          if (response.ok){
-            const data:api_user_account_response = await response.json()
-            if (data.account_status === "signin"){
-              router.push("/")
-            }else if (data.account_status === "signup"){
-              //apiでsessionを取得して認証に使用
-              router.push("/signup")
-            }else{
-              set_user_check_status(true)
-            }
-          }else{
-            router.push("/error")
-          }
+      const user_auth = async()=>{
+        const response = await fetch("/api/user/account",{
+          cache:"no-store"
+        })
+        const data:api_user_account_response = await response.json()
+        if (data.account_status === "signin"){
+          router.push("/")
+        }else{
+          set_user_check_status(true)
         }
+      }
+      if (status === "authenticated"){
         if (first_flg.current){
           first_flg.current = false
-          fetch_data()
+          user_auth()
         }
-    },[user_check_status])
+      }else if (status !== "loading"){
+        set_user_check_status(true)
+      }
+    },[first_flg,status])
   return (
     <div>
-        {user_check_status?          
-          <button onClick={()=>{
-            signIn("google")
-          }}>signin</button>:
-          <span>now loading...</span>
-          }
-
+          {user_check_status?
+            <>
+              <button onClick={()=>{signIn("google")}}>signin</button><br/>
+              <button onClick={()=>{
+                router.push("/signup")
+              }}>signup</button>
+            </>
+          :<span>loading.....</span>}
     </div>
   )
 }
