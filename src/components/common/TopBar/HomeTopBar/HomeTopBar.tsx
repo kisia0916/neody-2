@@ -6,7 +6,7 @@ function HomeHomeTopBar() {
   return (
     <div className='HomeTopBar'>
       <div className='HomeTopBarContent HomeTopBarLeft'>
-        <span className='HomeTopBarTitle'>Neody</span>
+        <span className='HomeTopBarTitle'>Timeorb</span>
       </div>
       <div className='HomeTopBarContent HomeTopBarRight'>
         <UserInfo/>
