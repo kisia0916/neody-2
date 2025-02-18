@@ -1,0 +1,122 @@
+.SignupPageMain{
+    display: flex;
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+}
+.SignupBox{
+    width: 92%;
+    /* height: 370px; */
+    margin: auto;
+    border-radius: 15px;
+    border: solid 1px #43433F;
+    /* margin-top: 30%; */
+}
+.SignupTitle{
+    color: white;
+    font-weight: 700;
+    font-size: 130%;
+}
+.SignupBoxTop{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+}
+.SignupTitle{
+    margin: auto;
+    margin-left: 0;
+}
+.SignupSettingAccount{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    margin: auto;
+}
+.SignupSettingAccountContent{
+    height: 35px;
+    margin: auto;
+    margin-left: 0;
+    border: solid 1px #43433F;
+    border-radius: 8px;
+    display: flex;
+    background-color: #292930;
+}
+.SignupSettingAccountText{
+    color: rgba(255, 255, 255, 0.829);
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.SignupSettingAccountContentIcon{
+    width: 23px;
+    height: 23px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50px;
+    margin-left: 8px;
+}
+.SignupElement{
+    width: 90%;
+    margin: auto;
+
+}
+.SignupElement{
+    margin-top: 15px;
+}
+.SignupElementTitle{
+    color: white;
+    font-size: 100%;
+    margin-top: 10px;
+}
+.SignupElementInput{
+    background-color: #ffffff00;
+    height: 100%;
+    outline: none;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.SignupElementInputWrapper{
+    display: flex;
+}
+.SignupElementInputWrapper{
+    border: solid 1px #43433F;
+    background-color: #ffffff00;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.SignupElementIDMark{
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+}
+.SignupCreateAccountButton{
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fefe36;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+  
+  /* ホバー時のスタイル */
+.SignupCreateAccountButton:active {
+    background-color: #ffff7a;
+  }
+
+.SignupBoxBottom{
+    width: 100%;
+    display: flex;
+}
+.SignupErrorMessage{
+    font-size: 90%;
+    color: rgb(255, 90, 90);
+}

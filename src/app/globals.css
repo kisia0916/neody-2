@@ -18,7 +18,13 @@
 body {
   background-color: #FFFAEC;
   font-family: "Quicksand","Zen Maru Gothic";
-  background-color: #1E1D1B;
+  /* background-color: #1E1D1B; */
+  /* background-color: #171a22; */
+  background-color: #1A1A1D;
+}
+p{
+  padding: 0;
+  margin: 0;
 }
 
 .MainScreen{
